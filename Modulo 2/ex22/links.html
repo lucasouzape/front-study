@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* exepmlos de simbolos usado no css\
+         # - id
+         . - classe
+         : - pseudo-classe
+        :: - pseudo-elemento
+        > - filho direto
+        + - irmão direto
+        ~ - irmão
+        * - universal     
+        */
+       
+
+        body { font-family: Arial, sans-serif;
+        }
+
+        a {
+            color: gray;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        a:visited {
+            color: rgb(0, 255, 42);
+        }
+
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: red;
+        }
+        a::before {
+            content: "Link:⊕ ⛈";
+            font-weight: normal;
+            color: black;
+        }
+
+        a::after {
+            content: " [link]";
+            font-size: 0.8em;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pesonalziando Links</h1>
+    <p>Este é um exemplo de página HTML com links.</p>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/lucas-pegoretti/">Link para Linkedin</a></li>
+        <li><a href="https://www.youtube.com/@lucaspegoretti">Link para youtube</a></li>
+        <li><a href="https://github.com/lucasouzape?tab=repositories">Link para GitHub</a></li>
+    </ul>
+    <p>Você pode visitar os links acima para aprender mais.</p>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        div > p {
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+            color: violet;
+            background-color: lime;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+        }
+        #box1 {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+        #box1:hover {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover Example</h1>
+    <p>HPassa o mouse abaixo disgraca
+    </p>
+    <div id="box1">
+        <p>Box 1</p>
+    </div>
+    
+</body>
+</html>

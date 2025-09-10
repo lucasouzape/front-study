@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+/* This is a CSS file for styling a simple HTML document */
+body {
+    background-color: #00fd9c;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    background-color: bisque;
+}
+h2 {
+    color: #2980b9;
+    margin-top: 20px;
+}
+p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}

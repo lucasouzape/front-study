@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* CSS sendo # e em HTml e ID 
+    CSS sendo "." e html e class */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #4f8cdb86;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  text-align :justify;
+}
+
+h1#principal {
+  color: #ff6347; /* Tomato color for the principal heading */
+  text-align: center;
+  background-color: rgba(0, 255, 255, 0.432);
+  border-radius: 10px;
+}
+
+h2 {
+  color: #555;
+  margin-top: 20px;
+}
+
+.basico {
+  color: #4682b4; /* SteelBlue color for the secondary heading */
+  text-align: center;
+  
+  border-radius: 10px;
+}
+
+.intermediario {
+  color: #8a2be2; /* BlueViolet color for the intermediate heading */
+  text-align: center;
+ 
+  border-radius: 10px;
+}
+
+.avancado {
+  color: #32cd32; /* LimeGreen color for the advanced heading */
+  text-align: center;
+  
+  border-radius: 10px;
+}

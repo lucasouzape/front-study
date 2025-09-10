@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Midia em HTML5   </h2>
+<h1>  imagem dinamica  </h1>
+<p>  tente abrir em varios dispositivos em um navegador </p>
+<picture>
+    <source media="(min-width: 650px)" srcset="Imagens/foto-g.png">
+    <source media="(min-width: 465px)" srcset="Imagens/foto-m.png">
+    <source srcset="Imagens/foto-p.png">
+
+    
+    <img src="Imagens/foto-g.png" alt="imagem flexivel">
+ </picture>
+ <h1>  TESTE PARA AUDIO</h1>
+
+ <p><audio preload="auto"autoplay controls loop>
+    <source src="Audio/eletronic-test.mp3" type="audio/mpeg">
+     tente <audio src="Audio/eletronic-test.mp3" controls autoplay></audio> </p>
+    <p>Mais <audio src="Audio/eletronic-test.ogg" type="audio/ogg"></audio></p>
+    </audio> 
+
+    <h1>  TESTE PARA VIDEO</h1>
+    <p> <video width="500" poster="Imagens/foto-p.png" preload="auto" autoplay controls loop>
+        <video src="Video/eletronic-test.mp4" controls></video>
+        tente <video src="Video/eletronic-test.mp4" controls autoplay></video> </p>
+    </video>
+    <h1>Inserindo video do YT</h1>
+    <iframe width="560" height="315"
+     src="https://www.youtube.com/embed/nRWupmq97gI?si=XM1GZDpd1ifQTESL" 
+     title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    
+</body>
+</html>

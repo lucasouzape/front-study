@@ -1,0 +1,95 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background-color: darkgray;
+}
+/* Estilizando o cabeçalho ta sobrando embaixo */
+header {
+    background-color: #1b1b1b;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 4px solid #555;
+}
+
+header > h1 {
+    padding-top: 50px;
+    color: #f39c12;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+header > p {
+    font-size: 14px;
+    margin-top: 5px;
+    padding-bottom: 50px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: lightgray;
+   color: black;
+   
+}
+
+section.imagem {
+    background-color: lightblue;
+    color: black;
+
+}
+
+section.imagem > p {
+    background-color: rgba(255, 255, 255, 0.267);
+    width: 400px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgoldenrodyellow;  }
+
+    a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        text-transform: uppercase;
+        font-size: 20px;
+        color: burlywood;
+        animation: infinite;
+        transition: 0.3s;
+        appearance: inherit;
+    }
+
+
+    footer {
+        background-color: #1b1b1b;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-size: 14px;
+    }   

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            height: 400px;
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;   /* left, center, right */
+            vertical-align: middle; /* top, middle, bottom */
+           
+        }
+
+        .numero {
+            text-align: right;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+    Anatomia para tabelas grandes
+        TABLE
+            HEAD
+            TR, TD, TH
+            BODY
+            TR, TD, TH
+            FOOT
+            TR, TD, TH-->
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Estado</th>
+                        <th>Populacao</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                        <tr>
+                            <td>São Paulo</td>
+                            <td>46.289.333</td>
+                        </tr>
+                </tbody>
+
+                <tfoot>
+
+                </tfoot>
+            </table>
+</body>
+</html>

@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+        caption {
+            font-size: 1.5em;
+            margin: 10px;
+            font-weight: bold;
+            text-align: center;
+            background-color: lightgray;
+        }
         table {
             height: 400px;
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -30,10 +38,21 @@
         thead {
             background-color: lightgray;
         }   
+
+        thead > tr > th {
+            font-weight: bold;
+            position: sticky;
+            top: -1px; /* para evitar que a borda do thead desapareça */
+            background-color: lightgray;
+        }
         tfoot {
             background-color: lightblue;
             font-weight: bold;
         } 
+
+        tbody tr:nth-child(2n) { /* zebra striping */
+            background-color: #b9b7b7;
+        }
     
     </style>
 </head>
@@ -51,9 +70,10 @@
 
             <table>
                 <thead>
+                    <caption>População dos Estados - 2024</caption>
                     <tr>
-                        <th>Estado</th>
-                        <th>Populacao</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Populacao</th>
                     </tr>
                 </thead>
 
@@ -96,7 +116,7 @@
 
                 <tfoot>
                         <thr>
-                            <td>Total Habitantes</td>
+                            <td >Total Habitantes</td>
                             <td class="numero"><strong>211.755.692</strong></td>
                 </tfoot>
             </table>

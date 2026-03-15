@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: medium;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .destaquue{
+            background-color: lime;
+        }
+
+        col.cnome{
+           background-color: limegreen;
+        }
+
+        col.csexo{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exerrcicio de Tabela</h1>
+
+    <table>
+
+        <colgroup>
+        <col class="cnome">
+        <col class="csexo">
+        <col class="cidade">
+        <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissao</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <th>Jornalista</th>
+        </tr>
+
+                <tr>
+            <td>Joao</td>
+            <td>M</td>
+            <td>20</td>
+            <th>Pedreiro</th>
+        </tr>
+
+                <tr>
+            <td>Ana </td>
+            <td>F</td>
+            <td>44</td>
+            <th>Professora</th>
+        </tr>
+
+                <tr>
+            <td> Maria</td>
+            <td>F</td>
+            <td>63</td>
+            <th>Enfermeira</th>
+        </tr>
+
+                <tr>
+            <td>Pedro</td>
+            <td>M</td>
+            <td>60</td>
+            <th>Pastor</th>
+        </tr>
+
+                <tr>
+            <td>Claudio</td>
+            <td>M</td>
+            <td>33</td>
+            <th>Engenheiro</th>
+        </tr>
+
+                <tr>
+            <td>Zilda</td>
+            <td>F</td>
+            <td>60</td>
+            <th>Diarista</th>
+        </tr>
+    </table>
+    
+</body>
+</html>

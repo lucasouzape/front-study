@@ -4,25 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+    <style>
+        iframe{
+            border: 1px  solid black;
+            margin: 10px;
+            width: 300px;
+            height: 300px;
+            scrolling : auto;
+        }
+    </style>
 </head>
 <body>
     <h1>testando o uso de um iframe</h1>
     <p>
         acessando o 
-        
+        <!-- o iframe é uma tag que permite incorporar um site dentro de outro site
+         Por padrao e 30x150px -->
         <iframe src="https://www.cursoemvideo.com" 
         width="560" height="315" title="YouTube video player" 
         frameborder="0" allow="accelerometer; autoplay; 
         clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-         allowfullscreen></iframe>
+         allowfullscreen>
+        <a href="https://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a>
+        </iframe>
+
+        </iframe>
 
     </p>
-    <iframe src="https://www.google.com.br" frameborder="0">
+    <iframe src= "https://manualdohomemmoderno.com.br/desenvolvimento/dicas-praticas-para-deixar-de-ser-trouxa"
+     frameborder="0"></iframe>
         <p>O site do 
     </iframe>
        
         
-        meu site</a> para aprender a programar , ou nao
+        meu site</a> para aprender a programar , ou nao rs
     </p>
     
 </body>

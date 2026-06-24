@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de fomulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="iest">Estado: </label>
+            <select name="estado" id="iest">
+
+                <option value="" selected>Selecione seu Estado</option>
+
+                <optgroup label="Sudeste">
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="mg">Minas Gerais</option>
+                    <option value="es">Espírito Santo</option>
+                </optgroup>
+
+                <optgroup label="Sul">
+                    <option value="pr">Paraná</option>
+                    <option value="sc">Santa Catarina</option>
+                    <option value="rs">Rio Grande do Sul</option>
+                </optgroup>
+
+                <optgroup label="Nordeste">
+                    <option value="ba">Bahia</option>
+                    <option value="pe">Pernambuco</option>
+                    <option value="ce">Ceará</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissao: </label>
+            <input type="text" name="profissao" id="iprof" placeholder="Digite sua profissao" list="lstprofissoes">
+            <datalist id="lstprofissoes">
+                <option>Administrador</option>
+                <option>Contador</option>
+                <option>Desenvolvedor</option>
+                <option>Engenheiro</option>
+                <option>Médico</option>
+
+            </datalist>
+        </p>
+
+
+        <p> 
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    
+</body>
+</html>

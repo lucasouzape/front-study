@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLexbox</title>
+    <style>
+        div.container{
+            background-color: salmon;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            height: 300px;
+            width: 100%;
+        }
+        div.item{
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+            flex-basis: 150px; /* Define a base size for the items */ 
+            flex-shrink: 1; /* Allow items to shrink if necessary */
+                }
+        div#i1{
+            flex-shrink: 0;
+            flex-grow: 2;
+        }
+        div#i2{
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+        div#i3{
+            flex-shrink: 3;
+            flex-grow: 0;
+        }
+        div#i4{
+            flex-shrink: 2;
+            flex-grow: 3;
+        }
+        div#i5{
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+        div#i6{
+            flex-shrink: 8;
+            flex-grow: 4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id = "i1">Conteudo</div>
+        <div class="item" id = "i2">B</div>
+        <div class="item" id = "i3">Conteudo grande</div>
+        <div class="item" id = "i4">D</div>
+        <div class="item" id = "i5">Conteudo grande pra cacete pra ficar bem aparecido na tela</div>
+        <div class="item" id = "i6">F</div>
+
+    </div>
+    
+</body>
+</html>

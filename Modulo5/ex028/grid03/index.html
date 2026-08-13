@@ -7,14 +7,17 @@
     <style>
         div.container {
          border: 3px solid #0077ff;
-            height: 250px;
             display: grid;
             /* grid-template-columns: repeat(3, auto);   /*  pode ser 1fr 1fr 1fr; para dividir por igual
              */
-            grid-template: repeat(3,auto) / repeat(3, auto);
+            grid-template-rows: 80px  80px 80px;
+            grid-template-columns: repeat(3, 120px);
+            grid-auto-flow: column;
+            grid-auto-rows: 80px;
+            grid-auto-columns: 120px;
             gap: 10px;
-            place-items: start center ;
-            place-content: space-between end;
+            place-items: normal normal ;
+            place-content: normal normal ;
 
         }
 
@@ -36,6 +39,9 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
 
 
     </div>

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+header {
+    background-color: #3d3b3b;
+    color: #fff;
+    background: linear-gradient(to right, #000000, rgb(255, 0, 0));
+    flex-flow: column nowrap;
+
+}
+
+
+
+header > h1 {
+   /* border: 1px dotted #0a2be6; */
+    flex-basis: 50px;
+    text-shadow: 2px 2px 1px #000;
+}
+
+header > nav > a {
+    width: 90vw;
+}
